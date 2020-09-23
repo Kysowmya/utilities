@@ -1,0 +1,40 @@
+.blog{
+width:800vw;
+margin:0 auto;
+&__h1{
+  color:yellowgreen;
+}
+&__h2{
+  color:navy;
+}
+&__p{
+  color:gray;
+
+&__a{
+  color:red;
+}
+}
+&__read-more{
+//  background-color: black;
+//Like inheritence
+//placeholder % instead of .
+//@extend %button;
+//to call mixin we use @include
+@include button;
+  color:white;
+  // padding:10px;
+  // diplay:block;
+  &--unavailable{
+  //  background-color: black;
+ //like  inheritence
+ //placeholder % instead of .
+ //@extend %button;
+//call mixins by useing @include
+@include button(red);
+    color:green;
+    // padding:10px;
+    // diplay:block;
+    cursor: not-allowed;
+  }
+}
+}

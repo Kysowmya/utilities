@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>GULP+Bootstrap</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+	</head>
+	<body>
+
+	<h1>model</h1>
+	<div class="modal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>Modal body text goes here.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        hi model
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+<h1>progress</h1>
+<div class="progress">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<br><br>
+<h1>scrollspy</h1>
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#fat">@fat</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mdo">@mdo</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#one">one</a>
+        <a class="dropdown-item" href="#two">two</a>
+        <div role="separator" class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#three">three</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <h4 id="fat">@fat</h4>
+  <p>...</p>
+  <h4 id="mdo">@mdo</h4>
+  <p>...</p>
+  <h4 id="one">one</h4>
+  <p>...</p>
+  <h4 id="two">two</h4>
+  <p>...</p>
+  <h4 id="three">three</h4>
+  <p>...</p>
+</div>
+<div class="modal-body">
+  <h5>Popover in a modal</h5>
+  <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+  <hr>
+  <h5>Tooltips in a modal</h5>
+  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+
+
+<br><br>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<h1>Spinners</h1>
+
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#fat">@fat</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mdo">@mdo</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#one">one</a>
+        <a class="dropdown-item" href="#two">two</a>
+        <div role="separator" class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#three">three</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <h4 id="fat">@fat</h4>
+  <p>...</p>
+  <h4 id="mdo">@mdo</h4>
+  <p>...</p>
+  <h4 id="one">one</h4>
+  <p>...</p>
+  <h4 id="two">two</h4>
+  <p>...</p>
+  <h4 id="three">three</h4>
+  <p>...</p>
+</div>
+
+<h1>Spinners</h1>
+<div class="spinner-border text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-success" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-danger" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-light" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-dark" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+<br>
+<br>
+<div class="spinner-grow text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-light" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+<br>
+<h1>tooltip</h1>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+
+<br><br><br>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+  Tooltip with HTML
+</button>
+<br><br>
+<h1>Popover</h1>
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+<br><br>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on right
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on bottom
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on left
+</button>
+<br><br><br>
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+
+
+<br><br>
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+
+<br><br><br>
+
+<h1>toast</h1>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+    <strong class="mr-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+<br><br>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+    <strong class="mr-auto">Bootstrap</strong>
+    <small class="text-muted">11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+
+<br><br>
+
+<div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+  <div class="toast" style="position: absolute; top: 0; right: 0;">
+    <div class="toast-header">
+      <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+      <strong class="mr-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+  <!-- Position it -->
+  <div style="position: absolute; top: 0; right: 0;">
+
+    <!-- Then put toasts within -->
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+        <strong class="mr-auto">Bootstrap</strong>
+        <small class="text-muted">just now</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        See? Just like this.
+      </div>
+    </div>
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+        <strong class="mr-auto">Bootstrap</strong>
+        <small class="text-muted">2 seconds ago</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        Heads up, toasts will stack automatically
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+  <div class="toast-header">
+    <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+    <strong class="mr-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+
+<br><br><br>
+
+<h1>Accessability</h1>
+<p class="text-danger">
+  <span class="sr-only">Danger: </span>
+  This action is not reversible
+</p>
+<br>
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+
+<br>
+<h1>utilites</h1>
+<h2>Border</h2>
+<h3>additive</h3>
+<span class="border"></span>
+<span class="border-top"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+<span class="border-left"></span>
+<br>
+<h3>subtractive</h3>
+<span class="border-0"></span>
+<span class="border-top-0"></span>
+<span class="border-right-0"></span>
+<span class="border-bottom-0"></span>
+<span class="border-left-0"></span>
+<br>
+<h3>Border color</h3>
+<span class="border-0 border-primary rounded-lg"></span>
+<span class="border-top-0 border-secondary"></span>
+<span class="border-bottom-0 border-success"></span>
+<span class="border border-danger"></span>
+<span class="border border-warning"></span>
+<span class="border border-info"></span>
+<span class="border border-light"></span>
+<span class="border border-dark rounded-pill"></span>
+<span class="border border-white rounded=top"></span>
+<br>
+<h3>Border radious</h3>
+<img src="..." alt="..." class="rounded-sm">
+<img src="..." alt="..." class="rounded-top">
+<img src="..." alt="..." class="rounded-right">
+<img src="..." alt="..." class="rounded-bottom">
+<img src="..." alt="..." class="rounded-left">
+<img src="..." alt="..." class="rounded-circle">
+<img src="..." alt="..." class="rounded-pill">
+<img src="..." alt="..." class="rounded-0">
+
+<h3>border sizes</h3>
+<img src="..." alt="..." class="rounded-sm">
+<img src="..." alt="..." class="rounded-lg">
+
+
+<br>
+<h1>clearfix</h1>
+<div class="carousel slide">
+<div class="bg-info clearfix">
+  <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+  <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+</div>
+</div>
+
+<br>
+<div class="clearfix">
+    <div class="float-sm-right">Float right on small screens or wider</div><br>
+    <div class="float-md-right">Float right on medium screens or wider</div><br>
+    <div class="float-lg-right">Float right on large screens or wider</div><br>
+    <div class="float-xl-right">Float right on extra large screens or wider</div><br>
+    <div class="float-none">Float none</div>
+  </div>
+</div>
+
+<br>
+<div class="w-25 bg-warning">Float right on small screens or wider</div><br>
+<div class="h-50 bg-warning">Float right on medium screens or wider</div><br>
+<div class="mh-100 bg-warning">Float right on large screens or wider</div><br>
+<div class="mw-100 bg-warning">Float right on extra large screens or wider</div><br>
+<div class="mx-auto bg-warning">center</div>
+
+<br>
+<h3>close icons</h3>
+<button type="button" class="close" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+
+<br>
+<h3>colors</h3>
+<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+<div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+<div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+<div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+<div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+<div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+<div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+<div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+<div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+<div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+<br>
+
+<h1>dispaly</h1>
+<div class="d-inline p-2 bg-primary text-white">d-inline</div>
+<div class="d-inline p-2 bg-dark text-white">d-inline</div>
+
+<br>
+<div class="d-block p-2 bg-primary text-white">d-inline</div>
+<div class="d-block p-2 bg-dark text-white">d-inline</div>
+
+<br>
+<div class="d-lg-none">hide on screens wider than lg</div>
+<div class="d-none d-lg-block">hide on screens smaller than lg</div>
+
+<br>
+<div class="d-print-none">Screen Only (Hide on print only)</div>
+<div class="d-none d-print-block">Print Only (Hide on screen only)</div>
+<div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>
+
+<br>
+<h3>Embed</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+</div>
+<br>
+<!-- 21:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-21by9">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+
+<!-- 4:3 aspect ratio -->
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+
+<!-- 1:1 aspect ratio -->
+<div class="embed-responsive embed-responsive-1by1">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+
+<br><br><br>
+<h1>flex</h1>
+
+<div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+<br>
+<div class="d-flex p-3 bg-secondary text-white">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+<br>
+<br>
+<br>
+<div class="d-inline-flex p-3 bg-secondary text-white">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+
+<br><br><br>
+<div class="d-flex flex-row bg-secondary">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+<div class="d-flex flex-row-reverse bg-secondary">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+<br><br><br>
+
+<div class="d-flex flex-column bg-secondary">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+<div class="d-flex flex-column-reverse bg-secondary">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+<br><br><br>
+<div class="d-flex justify-content-start">
+	<div class="p-2 bg-info">Flex item 1</div>
+	<div class="p-2 bg-warning">Flex item 2</div>
+	<div class="p-2 bg-primary">Flex item 3</div>
+</div>
+<br><br><br>
+<div class="d-flex justify-content-end">
+	<div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+<br><br><br>
+<div class="d-flex justify-content-center">
+	<div class="p-2 bg-info">Flex item 1</div>
+	<div class="p-2 bg-warning">Flex item 2</div>
+	<div class="p-2 bg-primary">Flex item 3</div>
+</div>
+<br><br><br>
+<div class="d-flex justify-content-between">
+	<div class="p-2 bg-info">Flex item 1</div>
+	<div class="p-2 bg-warning">Flex item 2</div>
+	<div class="p-2 bg-primary">Flex item 3</div>
+</div>
+<br><br><br>
+<div class="d-flex justify-content-around">
+	<div class="p-2 bg-info">Flex item 1</div>
+	<div class="p-2 bg-warning">Flex item 2</div>
+	<div class="p-2 bg-primary">Flex item 3</div>
+</div>
+<br><br><br>
+<div class="d-flex">
+  <div class="p-2 bg-info flex-fill">Flex item 1</div>
+  <div class="p-2 bg-warning flex-fill">Flex item 2</div>
+  <div class="p-2 bg-primary flex-fill">Flex item 3</div>
+</div>
+
+
+<br><br><br>
+
+<div class="d-flex">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary flex-grow-1">Flex item 3</div>
+</div>
+<br><br><br>
+
+
+<div class="d-flex bg-secondary">
+  <div class="p-2 bg-info order-3">Flex item 1</div>
+  <div class="p-2 bg-warning order-2">Flex item 2</div>
+  <div class="p-2 bg-primary order-1">Flex item 3</div>
+</div>
+<br><br><br>
+
+<div class="d-flex bg-secondary">
+  <div class="p-2 mr-auto bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+<div class="d-flex bg-secondary">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 ml-auto bg-primary">Flex item 3</div>
+</div>
+
+<br><br>
+<div class="float-left">Float left on all viewport sizes</div><br>
+<div class="float-right">Float right on all viewport sizes</div><br>
+<div class="float-none">Don't float on all viewport sizes</div>
+
+<br><br>
+<div class="float-sm-left">Float left on viewports sized SM (small) or wider</div><br>
+<div class="float-md-left">Float left on viewports sized MD (medium) or wider</div><br>
+<div class="float-lg-left">Float left on viewports sized LG (large) or wider</div><br>
+<div class="float-xl-left">Float left on viewports sized XL (extra-large) or wider</div><br>
+<br>
+
+<h1 class="text-hide">Custom heading</h1>
+<h1 class="text-hide" style="background-image: url('...');">Bootstrap</h1>
+<br><br><br>
+<div class="overflow-auto">
+Float left on viewports sized SM (small) or wider
+Float left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or widerFloat left on viewports sized SM (small) or wider
+
+</div>
+
+<div class="overflow-hidden">...</div>
+
+<br><br>
+<div class="position-static">...</div>
+<div class="position-relative">...</div>
+<div class="position-absolute">...</div>
+<div class="position-fixed">...</div>
+<div class="position-sticky">...</div>
+
+<br><br><br>
+<div class="fixed-bottom">...</div>
+
+<br><br>
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<br><br>
+<div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+<div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+<div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+<div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+
+<br><br><br>
+
+<div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+<div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+<div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+<div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+
+<br><br>
+<div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+  <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+  <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+  <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+  <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+  <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+</div>
+
+
+<br><br>
+<div class="min-vw-100">Min-width 100vw</div>
+<div class="min-vh-100">Min-height 100vh</div>
+<div class="vw-100">Width 100vw</div>
+<div class="vh-100">Height 100vh</div>
+
+<br><br><div class="row mx-md-n5">
+  <div class="col px-md-5"><div class="p-3 border bg-light">Custom column padding</div></div>
+  <div class="col px-md-5"><div class="p-3 border bg-light">Custom column padding</div></div>
+</div>
+
+
+<br><br>
+
+<h1>streched link</h1>
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card with stretched link</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+  </div>
+</div>
+
+<br><br>
+<div class="row no-gutters bg-light position-relative">
+  <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="..." class="w-100" alt="...">
+  </div>
+  <div class="col-md-6 position-static p-4 pl-md-0">
+    <h5 class="mt-0">Columns with stretched link</h5>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <a href="#" class="stretched-link">Go somewhere</a>
+  </div>
+</div>
+<div class="row no-gutters bg-light position-relative">
+  <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="..." class="w-100" alt="...">
+  </div>
+  <div class="col-md-6 position-static p-4 pl-md-0">
+    <h5 class="mt-0">Columns with stretched link</h5>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <a href="#" class="stretched-link">Go somewhere</a>
+  </div>
+</div>
+
+
+<br><br>
+
+
+<h1>text</h1>
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+
+<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p><p class="font-weight-bold">Bold text.</p>
+<p class="font-weight-bolder">Bolder weight text (relative to the parent element).</p>
+<p class="font-weight-normal">Normal weight text.</p>
+<p class="font-weight-light">Light weight text.</p>
+<p class="font-weight-lighter">Lighter weight text (relative to the parent element).</p>
+<p class="font-italic">Italic text.</p>
+
+
+
+<br><br>
+<p class="font-weight-bold">Bold text.</p>
+<p class="font-weight-bolder">Bolder weight text (relative to the parent element).</p>
+<p class="font-weight-normal">Normal weight text.</p>
+<p class="font-weight-light">Light weight text.</p>
+<p class="font-weight-lighter">Lighter weight text (relative to the parent element).</p>
+<p class="font-italic">Italic text.</p>
+
+<br> <br>
+
+<span class="align-baseline">baseline</span>
+<span class="align-top">top</span>
+<span class="align-middle">middle</span>
+<span class="align-bottom">bottom</span>
+<span class="align-text-top">text-top</span>
+<span class="align-text-bottom">text-bottom</span>
+
+
+<br><br>
+<table style="height: 100px;">
+  <tbody>
+    <tr>
+      <td class="align-baseline">baseline</td>
+      <td class="align-top">top</td>
+      <td class="align-middle">middle</td>
+      <td class="align-bottom">bottom</td>
+      <td class="align-text-top">text-top</td>
+      <td class="align-text-bottom">text-bottom</td>
+    </tr>
+  </tbody>
+</table>
+<br><br>
+
+<h1>visibility</h1>
+
+<div class="visible">...</div>
+<div class="invisible">...</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="src/js/main.js"></script>
+<script src="js/scripts.min.js"></script>
+<script>
+<br> <br>// $(function () {
+//   $('[
+<span class="align-baseline">baseline</span>
+<span class="align-top">top</span>
+<span class="align-middle">middle</span>
+<span class="align-bottom">bottom</span>
+<span class="align-text-top">text-top</span>
+<span class="align-text-bottom">text-bottom</span>
+
+
+<br><br>
+<table style="height: 100px;">
+  <tbody>
+    <tr>
+      <td class="align-baseline">baseline</td>
+      <td class="align-top">top</td>
+      <td class="align-middle">middle</td>
+      <td class="align-bottom">bottom</td>
+      <td class="align-text-top">text-top</td>
+      <td class="align-text-bottom">text-bottom</td>
+    </tr>
+  </tbody>
+</table>
+<br><br>
+
+<h1>visibility</h1>
+
+<div class="visible">...</div>
+<div class="invisible">...</div>data-toggle="tooltip"]').tooltip();
+// 	$('.popover-dismiss').popover({
+// 	  trigger: 'focus'
+// 	});
+// 	$('#element').toast('show');
+// })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+  //background-color:yellow;
+  //use utils folders variables here
+  background-color:$my-color;
+}
+
+//Extends
+//.button->this is not safe so use place holder
+// %button {
+//   background-color: black;
+//   //color:green;
+//   padding:10px;
+//   display:block;
+//
+// }
+
+// //Use @mixin
+// //we can override button
+// @mixin button($color:purple){
+// background-color: $color;
+// padding:em(60);
+// display:block;
+// }
+
+// .blog{
+// width:800vw;
+// margin:0 auto;
+// &__h1{
+//   color:yellowgreen;
+// }
+// &__h2{
+//   color:navy;
+// }
+// &__p{
+//   color:gray;
+//
+// &__a{
+//   color:red;
+// }
+// }
+// &__read-more{
+// //  background-color: black;
+// //Like inheritence
+// //placeholder % instead of .
+// //@extend %button;
+// //to call mixin we use @include
+// @include button;
+//   color:white;
+//   // padding:10px;
+//   // diplay:block;
+//   &--unavailable{
+//   //  background-color: black;
+//  //like  inheritence
+//  //placeholder % instead of .
+//  //@extend %button;
+// //call mixins by useing @include
+// @include button(red);
+//     color:green;
+//     // padding:10px;
+//     // diplay:block;
+//     cursor: not-allowed;
+//   }
+// }
+// }
+.wrapper {
+	font-size: 18px;
+	color: #333 ;
+	padding: 50px;
+	height: calc( 100vh - 200px );
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-radius: 5px;
+	background: whitesmoke;
+
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		margin-top: 100px;
+		margin-left: 50px
+	}
+	ul {
+		margin-left: 50px;
+		list-style: none;
+		width: 60%;
+		li {
+			line-height: 50px;
+			margin-bottom: 10px;
+			background: #eee;
+			padding-left: 15px;
+      transition: all 255;
+      &:hover{
+        background-color: darken(#eee,10%);
+      }
+     a{
+       color:$my-color;
+       //hover /active / visit using &:haver;
+       &:hover{
+         background-color: darken(#eee,10%);
+       }
+     }
+		}
+	}
+}

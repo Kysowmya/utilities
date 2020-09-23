@@ -1,0 +1,48 @@
+// .container, .row{
+// height: 100vh;
+// }
+body{
+  position: relative;
+}
+
+.btn:focus{
+  box-shadow: none !important;
+}
+
+.custom-heading{
+//  @import rfs(64);
+margin-top: 5px;
+font-size: 11px;
+}
+
+.p{
+line-height: 2;
+}
+
+.primary{
+  background-color:red;
+  color:black;
+  height:300px;
+}
+
+.container-fluid{
+  padding:0;
+}
+.bg-blue{
+  background-color: blue;
+  color:white;
+}
+
+.bg-black{
+  background-color: black;
+  color:white;
+}
+
+.bg-green{
+  background-color: green;
+  color:white;
+}
+
+.lead{
+  margin-top: 10px;
+}

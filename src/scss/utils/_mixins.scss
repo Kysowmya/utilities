@@ -1,0 +1,7 @@
+//Use @mixin
+//we can override button
+@mixin button($color:purple){
+background-color: $color;
+padding:em(60);
+display:block;
+}
